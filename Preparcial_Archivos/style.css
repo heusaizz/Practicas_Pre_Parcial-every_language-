@@ -1,0 +1,145 @@
+@import url('');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*  HEADER  */
+
+header {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    ;
+}
+
+header .logo {
+    height: 40px;
+    padding: 10px;
+}
+
+header nav {
+    flex-grow: 1;
+}
+
+header nav ul {
+    list-style-type: lower-alpha;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    font-family: sans-serif;
+    color: #333;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #6e6e6e;
+}
+
+header nav ul li a.active {
+    border-bottom: 2px solid #333333;
+}
+
+header .profile a {
+    color: #333333;
+    padding: 10px 30px;
+    display: block;
+}
+
+header .profile svg {
+    width: 30px;
+}
+
+
+/*  MAIN  */
+
+main section {
+    display: inline-flex;
+    min-height: 300px;
+}
+
+section.dark {
+    background-color:darkgrey;
+    color: black;
+}
+
+section.fullwidth {
+    justify-content: center;
+    align-items: top;
+}
+
+section.fullwidth h2 {
+    text-align: center;
+}
+
+section.main-image>div {
+    flex: 1;
+}
+
+.center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-background {
+    background: url('img/utn-alumnos.jpg');
+}
+
+.img-background h1 {
+    color: #ffffff;
+}
+
+.img-content p {
+    font-size: 18px;
+    padding: 45px;
+}
+
+.careers-container {
+    width: 80%;
+    padding: 30px 0px;
+}
+
+.careers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.careers .career {
+    flex: 1;
+    padding: 20px;
+}
+
+.careers .career:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+
+/*  FOOTER  */
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(240, 240, 240);
+    
+}
+
+footer>div {
+    justify-self: center;
+    padding: 20px;
+}
